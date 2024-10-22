@@ -1,11 +1,8 @@
 import fs from 'fs/promises';
+import db from './../db/productsDb.js';
 
 export const getProd = async (req, res) => {
-    const data = await fs.readFile("./products.json", "utf-8");
-
-    //convert from JSON to JS object notation
-    const products = JSON.parse(data);
-
+    const products = await db.getProducts();
     res.status(200).send({
         message: `Returning ${products.length} products`,
         products
@@ -15,9 +12,7 @@ export const getProd = async (req, res) => {
 export const getById = async (req, res) => {
     const id = parseInt(req.params.id);
 
-    const data = await fs.readFile("./products.json", "utf-8");
-    const products = JSON.parse(data);
-    const result = products.filter(prod => prod.id === id);
+    const result = await db.getProductById(id);
 
     if (result.length !== 0) {
         const product = result[0];
