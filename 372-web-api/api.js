@@ -1,5 +1,5 @@
 import express from 'express';
-//import productRouter from './routers/productsRouter.js';
+import productRouter from './routers/productsRouter.js';
 import jokesRouter from './routers/jokesRouter.js';
 
 const app = express();
@@ -11,7 +11,7 @@ app.use(express.static("./public"))
 app.use(express.json());
 
 //mount the router!
-//app.use("/api/v1/products", productRouter);
+app.use("/api/v1/products", productRouter);
 app.use("/api/v1/jokes", jokesRouter);
 
 app.listen(3000, () => console.log(`Server started on port 3000`));
