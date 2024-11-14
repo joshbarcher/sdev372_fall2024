@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Jane Doe",
+        "title": "Frontend Developer",
+        "email": "jane.doe@example.com",
+        "phone": "(555) 555-1234",
+        "tagline": "Passionate about building beautiful, user-friendly interfaces.",
+        "profileImage": "images/profile1.png"
+    },
+    {
+        "name": "John Smith",
+        "title": "Backend Developer",
+        "email": "john.smith@example.com",
+        "phone": "(555) 555-5678",
+        "tagline": "Always working behind the scenes to make things run smoothly.",
+        "profileImage": "images/profile4.png"
+    },
+    {
+        "name": "Alice Johnson",
+        "title": "UX Designer",
+        "email": "alice.johnson@example.com",
+        "phone": "(555) 555-8765",
+        "tagline": "Designing with the user in mind, every step of the way.",
+        "profileImage": "images/profile2.png"
+    },
+    {
+        "name": "Michael Brown",
+        "title": "DevOps Engineer",
+        "email": "michael.brown@example.com",
+        "phone": "(555) 555-4321",
+        "tagline": "Striving to bridge development and operations seamlessly.",
+        "profileImage": "images/profile3.png"
+    },
+    {
+        "name": "Emily Davis",
+        "title": "Project Manager",
+        "email": "emily.davis@example.com",
+        "phone": "(555) 555-1111",
+        "tagline": "Managing projects with efficiency and passion.",
+        "profileImage": "images/profile5.png"
+    }
+]

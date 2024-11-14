@@ -1,0 +1,81 @@
+body {
+    width: 1000px;
+    margin: auto;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Main card styling */
+.card-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+/* Contact info styling */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-info .name {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-info .title {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contact-info .email,
+.contact-info .phone {
+    font-size: 0.9em;
+    color: #888;
+    margin: 2px 0;
+}
+
+/* Profile image styling */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    align-self: start;
+}
+
+/* Tagline styling - spans across both columns */
+.tagline {
+    grid-column: 1 / -1;
+    font-size: 0.9em;
+    color: #555;
+    font-style: italic;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
