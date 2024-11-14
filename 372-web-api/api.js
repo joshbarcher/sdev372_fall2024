@@ -14,4 +14,4 @@ app.use(express.json());
 app.use("/api/v1/products", productRouter);
 app.use("/api/v1/jokes", jokesRouter);
 
-app.listen(4242, () => console.log(`Server started on port 4242`));
+app.listen(3000, () => console.log(`Server started on port 3000`));
